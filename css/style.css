@@ -35,7 +35,7 @@ h3{
     display: inline-block;
 }
 .btn.animate-btn{
-    animation: animate-outline 1s ease-out infinite;
+    animation: animate-outline 1.2s ease-out infinite;
 }
 .btn:hover{
     background-color: rgba(226, 81, 36, 0.692);
@@ -45,7 +45,7 @@ h3{
         outline: 0px solid rgba(226, 81, 36, 0.692);
     }
     to{
-        outline: 6px solid rgba(207, 143, 123, 0.692);
+        outline: 8px solid rgba(207, 143, 123, 0.479);
     }
 }
 header{
@@ -74,6 +74,18 @@ nav ul a{
 
 nav a{
     padding-left: 17px;
+}
+nav ul a::after{
+    content: "";
+    background-color: rgba(201, 175, 154, 0.753);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
 }
 .banner{
     display: flex;
