@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+section,
+footer{
+    padding: 26px 0;
+}
+h3{
+    font-size: 50px;
+}
+.banner{
+    color: #FFFFFF;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.btn{
+    background-color: rgba(242, 82, 33, 0.8);
+    color: white; 
+    padding: 5px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: normal;
+    display: inline-block;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: rgba(226, 81, 36, 0.692);
+}
+@keyframes animate-outline {
+    from{
+        outline: 0px solid rgba(226, 81, 36, 0.692);
+    }
+    to{
+        outline: 6px solid rgba(207, 143, 123, 0.692);
+    }
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+
+}
+nav ul a{
+    color: #FFFFFF;
+    margin: 0 25px;
+    font-size: 14px;
+    display: block;
+}
+
+nav a{
+    padding-left: 17px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    white-space: nowrap;
+    font-size: 40px;
+    color: white;
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+.servico h3{
+    text-align: center;
+}
+.servico{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex; 
+}
+.card-itens{
+    padding: 13px;
+}
+.servico .card-itens{
+    background-color: rgba(217, 217, 217, 1);
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 600px;
+    height: 250px;
+}
+.servico .card-itens .btn{
+    margin-top: 10px;
+}
+.quemsomos{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#quemsomostxt{
+    padding: 15px;
+    color:aliceblue ;
+}
+.quemsomos .imgtxt{
+    display: flex;  
+    padding: 15px;
+    margin: 3px;
+}
+#autor{
+    text-align: right;
+}
+.quemsomos .imgtxt .barbudin{
+    height: 120px;
+    width: 120px;
+    margin: 5px;
+}
+.cliente {
+    text-align: center;
+}
+.cliente h3 {
+    margin-bottom: 15px;
+}
